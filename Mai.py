@@ -13,7 +13,7 @@ def run_receiver():
 
     try:
         while True:
-            # Recibir el tamaño de la imagen
+
             while len(data) < payload_size:
                 data += receiver_socket.recv(4096)
             
