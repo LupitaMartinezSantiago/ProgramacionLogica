@@ -32,7 +32,7 @@ def start_screen_monitoring_client(host, port):
                     return
                 image_data += packet
 
-            # Verificar si la imagen se recibió completamente
+           
             if len(image_data) == size:
                 # Mostrar la imagen
                 image = Image.open(io.BytesIO(image_data))
