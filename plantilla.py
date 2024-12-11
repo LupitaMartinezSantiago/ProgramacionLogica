@@ -1,8 +1,8 @@
-# plantilla.py
+
 import tkinter as tk
 
 def centrar_frame_principal(window):
-    # Función para centrar la ventana en la pantalla
+   
     window.update_idletasks()
     width = window.winfo_width()
     height = window.winfo_height()
