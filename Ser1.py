@@ -3,7 +3,7 @@ import tkinter as tk
 from PIL import Image, ImageTk
 import io
 
-# Funciones de plantilla (asegurarse de que existan en tu archivo plantilla.py)
+
 from plantilla import centrar_frame_principal, crear_label, create_entry, create_button
 
 def start_screen_monitoring_client(host, port): 
@@ -16,7 +16,7 @@ def start_screen_monitoring_client(host, port):
 
     def update_image():
         try:
-            # Recibir el tamaño de la imagen (4 bytes)
+            
             size_data = client_socket.recv(4)
             if not size_data:
                 print("Conexión cerrada o no se recibió datos.")
