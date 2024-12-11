@@ -6,7 +6,7 @@ import cv2
 import struct
 
 # Variable global para controlar el cliente activo
-active_client = 0  # 0 para el cliente inicial, 1 para el cliente alternativo
+active_client = 0  
 
 def switch_client():
     global active_client
@@ -16,7 +16,7 @@ def switch_client():
 def run_server():
     global active_client
 
-    # Configuración del servidor para recibir la pantalla del cliente
+    
     server_socket1 = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
     server_socket1.bind(('0.0.0.0', 5000))
     server_socket1.listen(1)
